@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>WDD 231 - Web Frontend Development - Uchenna Onuorah | Home</title>
+        <meta name="description" content="This site is a Web Frontend Development page that also serves as a profile page for Uchenna Onuorah and his journey thus far to completing Certificate in Web Programming.">
+        <meta name="author" content="Uchenna Onuorah">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/course_work.css">
+        <script src="scripts/course_work.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="images/Profile_pic.jpg" alt="Profile Picture">
+            <span>Uchenna Onuorah</span>
+        </header>
+        <nav>
+            <button id="menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="https://byupw.instructure.com/">Chamber</a></li>
+                <li><a href="https://github.com/Uchenna77-dev">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/uchenna-onuorah-351bb1143/">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <section class="list">
+                <div class="title">
+                    <h2>Course Work</h2>
+                </div>
+                <ul>
+                    <li><a href="https://Programming_with_Functions.com">CE110</a></li>
+                    <li><a href="https://Programming_with_Functions.com">CE111</a></li>
+                    <li><a href="https://Programming_with_Functions.com">CE210</a></li>
+                    <li><a href="https://web_Design.com">WDD130</a></li>
+                    <li><a href="https://Web_Development.com">WDD131</a></li>
+                    <li><a href="https://Programming_with_Classes.com">WDD231</a></li>
+                </ul>    
+            </section>       
+            <section class="country">
+                <div class="title">
+                    <h2>Bauchi, Nigeria</h2>
+                </div>    
+                <div class="forest">
+                    <figure>
+                        <img src="images/palms.jpg" alt="Country Flag">
+                        <figcaption>Palm Trees</figcaption>
+                    </figure>
+                </div>  
+            </section>
+            <section id="course-list">
+                <div class="title">
+                    <h2>Web and Computer Programming Certificate</h2>
+                </div> 
+                <div class="course-filter">   
+                    <button onclick="filterCourses('All')">All Courses</button>
+                    <button onclick="filterCourses('WDD')">WDD Courses</button>
+                    <button onclick="filterCourses('CSE')">CSE Courses</button>
+                </div>    
+                <p id="total-credits">Total number of courses listed below: 0</p>
+                <div id="courses-container"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; <span id="year"></span> Uchenna Onuorah, Nigeria</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+
+</html> 

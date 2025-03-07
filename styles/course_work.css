@@ -1,0 +1,350 @@
+:root {
+    --color-dark-blue: #14213d;
+    --color-orange: #fca311;
+    --color-light-gray: #e5e5e5;
+    --color-white: #ffffff;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: rgb(220, 219, 217);
+}
+
+/* HEADER */
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(4, 99, 102);
+    color: var(--color-white);
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+header span {
+    font-size: 3rem;
+    margin-left: 40px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #444;
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: rgb(252, 252, 71);
+}
+a {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;  /* Ensure spacing between links */
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 2px;  /* Optional: Rounded corners for better aesthetics */
+}
+
+/* HAMBURGER MENU */
+#menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-white);
+    cursor: pointer;
+    position: absolute;
+    top: -10px; 
+    right: 15px;
+}
+
+/* MAIN CONTENT */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--color-white);
+}
+
+h1 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: rgb(2, 68, 101);
+    grid-column: 1/4;
+    text-align: start;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+/* SECTIONS */
+.list {
+    grid-column: 1/3;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.country {
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.forest figcaption {
+    text-align: center;
+}
+.title {
+    grid-column: 1/4;
+    background-color: rgb(4, 99, 102);
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+/* COURSE LIST */
+#course-list {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.course-filter {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.course-filter button {
+    background-color: var(--color-dark-blue);
+    color: aliceblue;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.course-filter button:hover {
+    background-color: var(--color-orange);
+}
+
+/* CREDITS INFO */
+#total-credits {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+/* COURSE CONTAINER */
+#courses-container {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(4, 99, 102);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.footer p {
+    text-align: center;
+}
+
+/* Mini Screen (801px) */
+@media (min-width: 801px) {
+    header span {
+        font-size: 2.5rem;
+        margin-left: 35px;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .list, .country {
+        gap: 10px;
+        width: 100%;
+    }
+
+    #course-list {
+        gap: 10px;
+    }
+    .country .forest figure {
+        justify-self: center;
+    }
+    .course-filter, .courses-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+/* TABLETS (481px to 800px) */
+@media (max-width: 800px) {
+    header span {
+        font-size: 2rem;
+        margin-left: 30px;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .list, .country {
+        grid-column: 1/2;
+        gap: 10px;
+        width: 100%;
+    }
+    .country .forest figure {
+        justify-self: center;
+    }
+    #course-list {
+        grid-column: 1/2;
+        gap: 10px;
+    }
+    .course-filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .courses-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    /* NAVIGATION */
+    #menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: none;
+        width: 100%;
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+}
+
+/* MOBILE (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        max-width: 100%;  /* Change from 1200px */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        text-align: center;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    header span {
+        font-size: 1.5rem;
+        margin-left: -5px;
+
+    } 
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .list, .country {
+        flex-direction: column;
+    }
+    #course-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #courses-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .course-filter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 5px;
+    }
+    .course-filter button {
+        background-color: var(--color-dark-blue);
+        color: aliceblue;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 0.3rem;
+        cursor: pointer;
+        border: none;
+    }
+
+    /* MOBILE NAV */
+    #menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background:none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+}
