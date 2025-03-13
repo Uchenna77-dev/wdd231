@@ -4,7 +4,7 @@
         "address": "123 Tech Street, Lagos",
         "phone": "+234 800 123 4567",
         "website": "https://techsolutions.com",
-        "image": "/chambers/images/Tech_Solution.jpg",
+        "image": "/chamber/images/Tech_Solution.jpg",
         "membershipLevel": 3
     },
     {
@@ -12,7 +12,7 @@
         "address": "45 Market Road, Abuja",
         "phone": "+234 802 987 6543",
         "website": "https://foodiedelight.com",
-        "image": "/chambers/images/Foodie_Delight.jpg",
+        "image": "/chamber/images/Foodie_Delight.jpg",
         "membershipLevel": 2
     },
     {
@@ -20,7 +20,7 @@
         "address": "89 Solar Drive, Kano",
         "phone": "+234 809 654 3210",
         "website": "https://greenenergy.com",
-        "image": "/chambers/images/Green_Energy_LTD.jpg",
+        "image": "/chamber/images/Green_Energy_LTD.jpg",
         "membershipLevel": 1
     },
     {
@@ -28,7 +28,7 @@
         "address": "77 Money Lane, Port Harcourt",
         "phone": "+234 701 123 9876",
         "website": "https://smartfintech.com",
-        "image": "/chambers/images/Smart_Fintech.jpg",
+        "image": "/chamber/images/Smart_Fintech.jpg",
         "membershipLevel": 3
     },
     {
@@ -36,7 +36,7 @@
         "address": "102 Car Street, Kaduna",
         "phone": "+234 705 321 4567",
         "website": "https://autoworld.com",
-        "image": "/chambers/images/AutoWorld.jpg",
+        "image": "/chamber/images/AutoWorld.jpg",
         "membershipLevel": 2
     },
     {
@@ -44,7 +44,7 @@
         "address": "56 Style Avenue, Enugu",
         "phone": "+234 803 987 1234",
         "website": "https://fashionhub.com",
-        "image": "/chambers/images/Fashion_Hub.jpg",
+        "image": "/chamber/images/Fashion_Hub.jpg",
         "membershipLevel": 1
     }
 ]
