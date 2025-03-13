@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ✅ Function to Fetch Members
     async function fetchMembers() {
         try {
-            const response = await fetch("/chambers/data/members.json"); 
+            const response = await fetch("/chamber/data/members.json"); 
             if (!response.ok) {
                 throw new Error("Failed to fetch members.json");
             }
