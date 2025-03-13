@@ -29,7 +29,7 @@ header {
     flex-direction: column;
     line-height: 1;
 }
-.logo-head h1 {
+.logo-head h2 {
     margin-bottom: 2px;
     font-size: 1.5rem;
 }
