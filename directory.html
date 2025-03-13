@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta property="og:title" content="Chamber of Commerce Directory Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="images/favicon.png">
+        <meta property="og:url" content="https://yourwebsite.com/directory.html">
+        <title>Chamber Of Commerce Directory Page</title>
+        <meta name="description" content="This site is a Chamber of Commerce directory page.">
+        <meta name="author" content="Uchenna Onuorah">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="/chambers/images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="/chambers/styles/normalize.css">
+        <link rel="stylesheet" href="/chambers/styles/directory.css">
+        <script src="/chambers/scripts/directory.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/chambers/images/Globe_Chambers.jpg" alt="Company Logo">
+                <div class="logo-head">
+                    <h1>Africa</h1>
+                    <p>Chamber of Commerce</p>
+                </div>    
+            </div>    
+            <nav>
+                <button id="menu">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+            <div class="icon-container">
+                <img src="/chambers/images/rocket-lunch.png" alt="Company Icon">
+            </div>
+        </header> 
+        <main>
+            <section class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </section>
+            <section id="membersContainer" class="grid"></section>
+        </main>
+        
+        <footer>
+            <div id="footer-data">
+                <p>Africa Chamber of Commerce</p>
+                <p>77 Money Lane, Port Harcourt</p>
+                <p>Africa Lich 777</p>
+                <p>info@africacc.org</p>
+                <p>+234-703-460-9486</p>
+            </div>
+            <div id="footer-icon">
+                <a href="https://www.youtube.com/"><img src="/chambers/images/youtube-logo.png" alt="Youtube Logo"></a>
+                <a href="https://x.com/"><img src="/chambers/images/Twitter-logo.png" alt="Twitter Logo"></a>
+                <a href="https://www.instagram.com/"><img src="/chambers/images/Linkedin-logo.png" alt="Instagram Logo"></a>
+            </div>
+            <div id="footer-info">
+                <p>WDD231 Class Project</p>
+                <p>Uchenna Onuorah</p>
+                <p>&copy;<span id="year"></span> Africa Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>    
+        </footer>
+    </body>
+</html>    
