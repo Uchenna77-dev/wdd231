@@ -221,6 +221,9 @@ footer {
         text-align: center;
         background:none;
     }
+    .nav-links li a {
+        font-size: 0.75rem;
+    }
     .links {
         display: flex;
         flex-direction: column;

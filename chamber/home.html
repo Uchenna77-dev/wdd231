@@ -7,16 +7,16 @@
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://uchenna77-dev.github.io/wdd231/chamber/images/favicon.png">
         <meta property="og:url" content="https://uchenna77-dev.github.io/wdd231/chamber/directory.html">
-        <title>Chamber Of Commerce Directory Page</title>
-        <meta name="description" content="This site is a Chamber of Commerce directory page. This page provides a list of local business and other organizations that belong to the chamber of commerce.">
+        <title>Chamber Of Commerce Home Page</title>
+        <meta name="description" content="This site is a Chamber of Commerce Home page. This page contain some attention grabbing information along with community information, weather, calls to action, and business spotlights.">
         <meta name="author" content="Uchenna Onuorah">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/png">
         <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/directory.css">
-        <script src="scripts/directory.js" defer></script>
+        <link rel="stylesheet" href="styles/index.css">
+        <script src="scripts/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -41,12 +41,39 @@
             </div>
         </header> 
         <main>
-            <h1>Chamber Of Commerce Directory</h1>
-            <section class="view-toggle">
-                <button id="grid-view">Grid View</button>
-                <button id="list-view">List View</button>
+            <section class="hero">
+                <img src="images/Chamber-of-Commerce-Hero.jpg" alt="Conference Room">
+                <a class="cta-button" href="join.html">Join the Chamber</a>
             </section>
-            <section id="membersContainer" class="grid"></section>
+            <div class="page"><h1>Home</h1></div>
+            <section id="events">
+                <div class="heading"><h2>Events</h2></div>
+                <p>Stay tuned for exciting community events happening soon!...</p>
+            </section>
+            <section id="weather">
+                <div class="heading"><h2>Current Weather</h2></div>
+                <div class="weather-icon">
+                    <img src="images/weather.webp" alt="Weather image">
+                    <div>
+                        <p id="temperature"></p>
+                        <p id="weather-description"></p>
+                        <p id="temperature">High: 85</p>
+                        <p id="temperature">Low: 52</p>
+                        <p id="humidity">Humidity: </p>
+                        <p>Sunrise: 7:30am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </div>    
+            </section>
+            <section id="weather">
+                <div class="heading"><h2>Weather Forecast</h2></div>
+                <div id="forecast">
+                    <p id="temperature">Today: </p>
+                    <p id="temperature">Wednesday: </p>
+                    <p id="temperature">Thursday: </p>
+                </div>    
+            </section>
+            <section id="spotlights"></section>
         </main>
         <footer>
             <div id="footer-data">
