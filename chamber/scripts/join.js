@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
 // Function to get URL parameters and display form values
 function getQueryParams() {
     const params = new URLSearchParams(window.location.search);
-    document.getElementById("first-name").textContent = params.get("first-name") || "N/A";
-    document.getElementById("last-name").textContent = params.get("last-name") || "N/A";
-    document.getElementById("email").textContent = params.get("email") || "N/A";
-    document.getElementById("phone").textContent = params.get("phone") || "N/A";
-    document.getElementById("business").textContent = params.get("organization") || "N/A";
-    document.getElementById("timestamp").textContent = params.get("timestamp") || "N/A";
+    document.getElementById("first-name").textContent = params.get("first-name");
+    document.getElementById("last-name").textContent = params.get("last-name");
+    document.getElementById("email").textContent = params.get("email");
+    document.getElementById("phone").textContent = params.get("phone");
+    document.getElementById("business").textContent = params.get("organization");
+    document.getElementById("timestamp").textContent = params.get("timestamp");
 }
 
 window.onload = getQueryParams;        
