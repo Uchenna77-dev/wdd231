@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta property="og:title" content="Chamber of Commerce Directory Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://uchenna77-dev.github.io/wdd231/chamber/images/favicon.png">
+        <meta property="og:url" content="https://uchenna77-dev.github.io/wdd231/chamber/directory.html">
+        <title>Chamber Of Commerce Join Page</title>
+        <meta name="description" content="This site is a Chamber of Commerce Join page. This page contains information about the benefit of joining the chamber and a membership application form. There are three membership level options of non-profit, silver, and gold. The different levels have different perks including directory listings, publications, trainings, social media work, luncheons, sponsorships, advertising, etc.">
+        <meta name="author" content="Uchenna Onuorah">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/join.css">
+        <script src="scripts/join.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/Globe_Chambers.jpg" alt="Company Logo">
+                <div class="logo-head">
+                    <h2>Africa</h2>
+                    <p>Chamber of Commerce</p>
+                </div>    
+            </div>    
+            <nav>
+                <button id="menu">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+            <div class="icon-container">
+                <img src="images/rocket-lunch.png" alt="Company Icon">
+            </div>
+        </header> 
+        <main>
+            <h1>Join</h1>
+            <div class="container">
+                <form action="thankyou.html" method="get">
+                    <h2>Membership Application Form</h2>
+                    <label>First Name: <input type="text" name="first-name" title="First Name" required autocomplete="given-name"></label>
+                    <label>Last Name: <input type="text" name="last-name" title="Last Name" required autocomplete="family-name"></label>
+                    <label>Organizational Title: <input type="text" name="organization-title" title="Organization Title" pattern="[A-Za-z\-\s]{7,}" autocomplete="organization-title"></label>
+                    <label>Email: <input type="email" name="email" title="Email" required autocomplete="email" placeholder="example@domain.com"></label>
+                    <label>Mobile Number: <input type="tel" name="phone" title="Mobile Number" required autocomplete="tel"></label>
+                    <label>Business/Organization Name: <input type="text" name="organization" title="Organization Name" required autocomplete="organization"></label>
+                    
+                    <label>Membership Level:
+                        <select name="membership-level">
+                            <option value="NP">Non-Profit (Free)</option>
+                            <option value="Bronze">Bronze</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Gold">Gold</option>
+                        </select>
+                    </label>
+                    
+                    <label>Description:
+                        <textarea name="description" title="Organization Description"></textarea>
+                    </label>
+                    
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Submit Application">
+                </form>
+            </div>
+                
+            <div class="membership-cards">
+                <h2>Membership Levels</h2>
+                <div class="card-container">
+                    <div class="card" id="np-card" onclick="openModal('np-modal')">
+                        <p>Non Profit Membership Level</p>
+                        <a href="#" class="btn" onclick="openModal('np-modal'); return false;">Learn More</a>
+                    </div>
+                    <div class="card" id="bronze-card" onclick="openModal('bronze-modal')">
+                        <p>Bronze Membership Level</p>
+                        <a href="#" class="btn" onclick="openModal('bronze-modal'); return false;">Learn More</a>
+                    </div>
+                    <div class="card" id="silver-card" onclick="openModal('silver-modal')">
+                        <p>Silver Membership Level</p>
+                        <a href="#" class="btn" onclick="openModal('silver-modal'); return false;">Learn More</a>
+                    </div>
+                    <div class="card" id="gold-card" onclick="openModal('gold-modal')">
+                        <p>Gold Membership Level</p>
+                        <a href="#" class="btn" onclick="openModal('gold-modal'); return false;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="np-modal" class="modal"> <div class="modal-content"><span class="close" onclick="closeModal('np-modal')">&times;</span><p>Non-Profit benefits...</p></div></div>
+            <div id="bronze-modal" class="modal"> <div class="modal-content"><span class="close" onclick="closeModal('bronze-modal')">&times;</span><p>Bronze benefits...</p></div></div>
+            <div id="silver-modal" class="modal"> <div class="modal-content"><span class="close" onclick="closeModal('silver-modal')">&times;</span><p>Silver benefits...</p></div></div>
+            <div id="gold-modal" class="modal"> <div class="modal-content"><span class="close" onclick="closeModal('gold-modal')">&times;</span><p>Gold benefits...</p></div></div>        
+        </main>    
+        <footer>
+            <div id="footer-data">
+                <p>Africa Chamber of Commerce</p>
+                <p>77 Money Lane, Port Harcourt</p>
+                <p>Africa Lich 777</p>
+                <p>info@africacc.org</p>
+                <p>+234-703-460-9486</p>
+            </div>
+            <div id="footer-icon">
+                <a href="https://www.youtube.com/"><img src="images/youtube-logo.png" alt="Youtube Logo"></a>
+                <a href="https://x.com/"><img src="images/Twitter-logo.png" alt="Twitter Logo"></a>
+                <a href="https://www.linkedin.com/"><img src="images/Linkedin-logo.png" alt="Linkedin Logo"></a>
+            </div>
+            <div id="footer-info">
+                <p>WDD231 Class Project</p>
+                <p>Uchenna Onuorah</p>
+                <p>&copy;<span id="year"></span> Africa Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>    
+        </footer>
+    </body>
+</html>    

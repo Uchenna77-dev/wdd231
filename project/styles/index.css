@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.hero-images, .catalog {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}

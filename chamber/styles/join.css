@@ -1,0 +1,383 @@
+/* General Form Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+.logo-head {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1;
+}
+.logo-head h2 {
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+    color: #f4f4f4;
+}
+.logo-head p {
+    margin-top: 0; 
+    font-size: 1rem;
+}
+nav {
+    margin-left: auto;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; 
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    list-style: none;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: green;
+}
+.icon-container {
+    margin-left: 10px;
+}
+h1 {
+    grid-column: 1/3;
+    text-align: start;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+.icon-container img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white; 
+}
+.view-toggle {
+    text-align: center;
+    margin: 20px 0;
+}
+#menu {
+    display: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.container {
+    max-width: 550px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    padding-right: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-style: italic;
+    font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-weight: bold;
+}
+
+input, textarea, select {
+    max-width: 550px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.card {
+    background: rgb(219, 217, 217);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards, changeColor 3s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+/* Fade In and Move Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle Background Color Change Over Time */
+@keyframes changeColor {
+    0% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: #f0f8ff;
+    }
+}
+
+/* Delay the animation for each card for a staggered effect */
+#np-card { animation-delay: 0.2s; }
+#bronze-card { animation-delay: 0.4s; }
+#silver-card { animation-delay: 0.6s; }
+#gold-card { animation-delay: 0.8s; }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #333;  
+    color: #fff;          
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+.btn:hover {
+    background: #0056b3;
+}
+.card .btn {
+    margin-top: auto;
+}
+
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+#footer-data, #footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+#footer-data p:first-of-type {
+    font-weight: bold;
+}
+#footer-data p,
+#footer-info p {
+    margin: 2px 0; 
+    font-size: 0.75rem;
+    align-self: flex-start;
+}
+#footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+#footer-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* Responsive Design */
+/* Mobile View */
+@media (max-width:620px) {
+    header {
+        position: relative;
+    }
+    .icon-container{
+        position: absolute;
+        right: 65px;
+    }
+    .logo-head {
+        margin-left: 5px;
+    }
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+    .logo-head p {
+        font-size: 0.75rem;
+    }
+    #menu {
+        display: inline;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background:none;
+    }
+    .nav-links li a {
+        font-size: 0.75rem;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    } 
+    main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .membership-cards, .container {
+        width: 80%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #footer-data p, 
+    #footer-info p {
+        font-size: 1rem;
+    }
+    #footer-data p {
+        margin-left: -25px;
+    }
+    #footer-icon img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+}
