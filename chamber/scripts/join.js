@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+    // Footer Year and Last Modified
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+
+    const menuButton = document.getElementById("menu");
+    const navLinks = document.querySelector(".nav-links");
+
+    // ✅ Toggle Mobile Menu
+    menuButton.addEventListener("click", function() {
+        navLinks.classList.toggle("links");
+    });
+    });
+
 document.getElementById('timestamp').value = new Date().toISOString();
         function openModal(id) { document.getElementById(id).style.display = 'block'; }
         function closeModal(id) { document.getElementById(id).style.display = 'none'; }
