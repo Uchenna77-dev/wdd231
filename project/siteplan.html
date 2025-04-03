@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome Listings</title>
+    <meta name="description" content="This is a siteplan for my proposed real estate project ">
+    <meta name="author" content="Uchenna Onuorah">
+    <link rel="stylesheet" href="styles/index.css"> <!-- External CSS for styling -->
+</head>
+<body>
+    <!-- Site Information -->
+    <section id="site-info">
+        <h2>Site Name: DreamHome Listings</h2>
+        <p>DreamHome was given to this site because it is a site where users can find their DreamHome.</p>
+        <h3>Site Purpose:</h3>
+        <p>The website serves as a platform to showcase real estate properties for sale, providing an interactive browsing experience for potential buyers while capturing user information for engagement.</p>
+        <h3>Color Scheme:</h3>
+        <ul>
+            <li><strong>Primary Color:</strong> Dark Desaturated Blue (#2C3E50) – Represents trust and professionalism. To be Used header and footer backgrouds</li>
+            <li><strong>Secondary Color:</strong> White (#FFFFFF) – Ensures clarity and contrast. Used for text</li>
+            <li><strong>Background Color:</strong> Light Gray (#F8F9FA) – Provides a modern and clean look.</li>
+        </ul>
+        <h3>Typography:</h3>
+        <ul>
+            <li><strong>Headings:</strong> Montserrat, sans-serif (Bold and modern)</li>
+            <li><strong>Body Text:</strong> Open Sans, sans-serif (Easy to read and professional)</li>
+            <li><strong>Buttons and Highlights:</strong> Roboto, sans-serif (Clear and engaging)</li>
+        </ul>
+        <h3>Scenarios:</h3>
+        <ul>
+            <li>A user searching for available real estate properties based on location or price range.</li>
+            <li>A buyer selecting and saving properties for later review.</li>
+            <li>A potential buyer submitting their contact details for follow-up.</li>
+        </ul>
+    </section>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">DreamHome Listings</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <section id="hero">
+        <h1>Find Your Dream Home</h1>
+        <p>Browse top real estate properties available for sale.</p>
+        <button onclick="location.href='catalog.html'">Explore Listings</button>
+    </section>
+    
+    <section id="featured-properties">
+        <h2>Featured Properties</h2>
+        <div class="properties" id="home-properties">
+            <!-- Dynamic content via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Catalog Page -->
+    <section id="catalog">
+        <h2>All Properties</h2>
+        <input type="text" id="search-bar" placeholder="Search properties...">
+        <div class="properties" id="catalog-properties">
+            <!-- Dynamic content via JavaScript -->
+        </div>
+        <button onclick="location.href='user-details.html'">Request More Info</button>
+    </section>
+
+    <!-- User Details Page -->
+    <section id="user-details">
+        <h2>Enter Your Details</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to Newsletter
+            </label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Wireframes -->
+    <h2>Wireframe</h2>
+    <div class="wireframe">
+        <h3>Home Page Layout (Desktop View)</h3>
+        <ul>
+            <li><strong>Header:</strong> Logo on the left; navigation links (Home, Catalog, Contact) on the right.</li>
+            <li><strong>Hero Section:</strong> A prominent banner (Hero image) with a tagline and call-to-action button.</li>
+            <li><strong>Featured Properties:</strong> Dynamically loaded properties displayed in a grid format.</li>
+            <li><strong>Footer:</strong> Contact information, social media links, and a newsletter subscription form.</li>
+        </ul>
+    </div>
+    <div class="wireframe">
+        <h3>Home Page Layout (Mobile View)</h3>
+        <ul>
+            <li><strong>Header:</strong> Collapsible menu with logo centered.</li>
+            <li><strong>Hero Section:</strong> Full-width hero image with tagline and call-to-action button.</li>
+            <li><strong>Featured Properties:</strong> Single-column stacked property listings for easy scrolling.</li>
+            <li><strong>Footer:</strong> Stacked layout with contact links and subscription form.</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 DreamHome Listings. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script> <!-- JavaScript for dynamic functionality -->
+</body>
+</html>
