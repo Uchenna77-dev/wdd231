@@ -78,7 +78,6 @@ nav a:hover {
 }
   
 h1 {
-    grid-column: 1/3;
     text-align: start;
     padding: 0.5rem;
     font-size: 2rem;
