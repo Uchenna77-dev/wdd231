@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Fetch data from JSON file
         async function fetchItems() {
             try {
-                const response = await fetch("data/funPlaces.json");
+                const response = await fetch("https://uchenna77-dev.github.io/wdd231/chamber/data/funPlaces.json");
                 if (!response.ok) throw new Error("Failed to fetch items.json");
                 const items = await response.json();
                 displayItems(items);
