@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Victoria Falls",
+      "address": "Livingstone, Zambia / Victoria Falls, Zimbabwe",
+      "description": "One of the world's largest waterfalls, offering dramatic scenery and adrenaline-pumping activities like white-water rafting and bungee jumping.",
+      "image": "images/victoria_falls.webp"
+    },
+    {
+      "name": "Maasai Mara National Reserve",
+      "address": "Narok County, Kenya",
+      "description": "A world-famous wildlife sanctuary known for the Great Migration exceptional view and incredible big cat sightings under a beautiful sunset.",
+      "image": "images/masai_mara_sunset.webp"
+    },
+    {
+      "name": "Table Mountain",
+      "address": "Cape Town, South Africa",
+      "description": "A flat-topped mountain offering panoramic views of Cape Town, accessible by hiking trails or a scenic cableway.",
+      "image": "images/table_mountain.webp"
+    },
+    {
+      "name": "Zanzibar Island",
+      "address": "Zanzibar, Tanzania",
+      "description": "A tropical paradise known for white-sand beaches, turquoise waters, and a rich blend of African, Arab, and European cultures.",
+      "image": "images/zanzibar_beach.webp"
+    },
+    {
+      "name": "Sahara Desert",
+      "address": "Merzouga, Morocco",
+      "description": "The world's largest hot desert offering sand dune adventures, camel rides, and star-studded desert nights.",
+      "image": "images/Camel_Desert_Morocco.webp"
+    },
+    {
+      "name": "Bazaruto Archipelago",
+      "address": "Inhambane Province, Mozambique",
+      "description": "A group of pristine islands with coral reefs, marine life, and luxurious eco-resorts perfect for a quiet getaway.",
+      "image": "images/bazaruto_archipelago.webp"
+    },
+    {
+      "name": "Nyungwe Forest National Park",
+      "address": "Southwestern Rwanda",
+      "description": "A biodiverse rainforest filled with chimpanzees, hiking trails, and Africa's longest canopy walk.",
+      "image": "images/Canopy_walk.webp"
+    },
+    {
+      "name": "Lekki Art Market",
+      "address": "Oba Elegushi Street, Lekki, Lagos, Nigeria",
+      "description": "A vibrant craft market showcasing Nigerian art, textiles, sculptures, and handmade souvenirs.",
+      "image": "images/lekki_market.webp"
+    }
+  ]
+  

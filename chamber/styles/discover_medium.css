@@ -1,0 +1,57 @@
+ /* Medium Screens (641px to 1024px) */
+@media (max-width: 1024px) {
+    #items-container {
+      display: grid;
+      grid-template-columns: 1fr; /* Two-column layout */
+      gap: 20px;
+    }
+    .card {
+      display: grid;
+      grid-template-columns: 280px 1fr; /* Image | Info */
+      grid-template-areas:
+        "image name"
+        "image address"
+        "image description"
+        "image item-link";
+      gap: 10px;
+      align-items: start;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+  
+    .card h2 {
+      grid-area: name;
+      margin: 0;
+      font-size: 1.2rem;
+      text-align: start;
+    }
+  
+    .card address {
+      grid-area: address;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  
+    .card p {
+      grid-area: description;
+      margin: 0;
+      font-size: 0.9rem;
+    } 
+    .card figure {
+        grid-area: image;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .card figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+    }
+    
+  }
+  
+  
