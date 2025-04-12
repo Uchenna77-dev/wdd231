@@ -1,0 +1,163 @@
+[
+    {
+      "name": "Luxury 4-Bedroom Duplex",
+      "location": "Lekki, Lagos",
+      "price": "₦120,000,000",
+      "type": "For Sale",
+      "bedrooms": 4,
+      "image": "images/lekki-duplex.webp"
+    },
+    {
+      "name": "3-Bedroom Apartment",
+      "location": "Victoria Island, Lagos",
+      "price": "₦80,000,000",
+      "type": "For Sale",
+      "bedrooms": 3,
+      "image": "images/victoria-island-apartment.webp"
+    },
+    {
+      "name": "2-Bedroom Bungalow",
+      "location": "Ikeja, Lagos",
+      "price": "₦50,000,000",
+      "type": "For Sale",
+      "bedrooms": 2,
+      "image": "images/ikeja-bungalow.webp"
+    },
+    {
+      "name": "5-Bedroom Detached House",
+      "location": "Abuja, FCT",
+      "price": "₦200,000,000",
+      "type": "For Sale",
+      "bedrooms": 5,
+      "image": "images/abuja-detached-house.webp"
+    },
+    {
+      "name": "Serviced 3-Bedroom Flat",
+      "location": "Ikoyi, Lagos",
+      "price": "₦15,000,000/year",
+      "type": "For Rent",
+      "bedrooms": 3,
+      "image": "images/ikoyi-flat.webp"
+    },
+    {
+      "name": "4-Bedroom Terrace Duplex",
+      "location": "Ajah, Lagos",
+      "price": "₦70,000,000",
+      "type": "For Sale",
+      "bedrooms": 4,
+      "image": "images/ajah-terrace.webp"
+    },
+    {
+      "name": "3-Bedroom Apartment",
+      "location": "Port Harcourt, Rivers",
+      "price": "₦25,000,000",
+      "type": "For Sale",
+      "bedrooms": 2,
+      "image": "images/portharcourt-apartment.webp"
+    },
+    {
+      "name": "Luxury 6-Bedroom Mansion",
+      "location": "Banana Island, Lagos",
+      "price": "₦1,000,000,000",
+      "type": "For Sale",
+      "bedrooms": 6,
+      "image": "images/banana-island-mansion.webp"
+    },
+    {
+      "name": "3-Bedroom Semi-Detached Duplex",
+      "location": "Gwarinpa, Abuja",
+      "price": "₦10,000,000/year",
+      "type": "For Rent",
+      "bedrooms": 3,
+      "image": "images/gwarinpa-duplex.webp"
+    },
+    {
+      "name": "4-Bedroom Fully Detached Duplex",
+      "location": "Magodo, Lagos",
+      "price": "₦150,000,000",
+      "type": "For Sale",
+      "bedrooms": 4,
+      "image": "images/magodo-duplex.webp"
+    },
+    {
+      "name": "2-Bedroom Flat",
+      "location": "Yaba, Lagos",
+      "price": "₦1,500,000/year",
+      "type": "For Rent",
+      "bedrooms": 2,
+      "image": "images/yaba-flat.webp"
+    },
+    {
+      "name": "5-Bedroom Duplex with BQ",
+      "location": "Asokoro, Abuja",
+      "price": "₦300,000,000",
+      "type": "For Sale",
+      "bedrooms": 5,
+      "image": "images/asokoro-duplex.webp"
+    },
+    {
+      "name": "3-Bedroom Bungalow",
+      "location": "Abeokuta, Ogun",
+      "price": "₦20,000,000",
+      "type": "For Sale",
+      "bedrooms": 3,
+      "image": "images/abeokuta-bungalow.webp"
+    },
+    {
+      "name": "Luxury 4-Bedroom Penthouse",
+      "location": "Eko Atlantic, Lagos",
+      "price": "₦500,000,000",
+      "type": "For Sale",
+      "bedrooms": 4,
+      "image": "images/eko-atlantic-penthouse.webp"
+    },
+    {
+      "name": "2-Bedroom Serviced Apartment",
+      "location": "Lekki Phase 1, Lagos",
+      "price": "₦5,000,000/year",
+      "type": "For Rent",
+      "bedrooms": 2,
+      "image": "images/lekki-serviced-apartment.webp"
+    },
+    {
+      "name": "3-Bedroom Detached Bungalow",
+      "location": "Enugu, Enugu State",
+      "price": "₦30,000,000",
+      "type": "For Sale",
+      "bedrooms": 3,
+      "image": "images/enugu-bungalow.webp"
+    },
+    {
+      "name": "5-Bedroom Fully Detached Duplex",
+      "location": "Owerri, Imo State",
+      "price": "₦120,000,000",
+      "type": "For Sale",
+      "bedrooms": 5,
+      "image": "images/owerri-duplex.webp"
+    },
+    {
+      "name": "4-Bedroom Semi-Detached Duplex",
+      "location": "Calabar, Cross River",
+      "price": "₦50,000,000",
+      "type": "For Sale",
+      "bedrooms": 4,
+      "image": "images/calabar-duplex.webp"
+    },
+    {
+      "name": "3-Bedroom Apartment",
+      "location": "Warri, Delta State",
+      "price": "₦15,000,000",
+      "type": "For Sale",
+      "bedrooms": 3,
+      "image": "images/warri-apartment.webp"
+    },
+    {
+      "name": "Luxury 5-Bedroom Villa",
+      "location": "Ikoyi, Lagos",
+      "price": "₦800,000,000",
+      "type": "For Sale",
+      "bedrooms": 5,
+      "image": "images/ikoyi-villa.webp"
+    }
+  ]
+  

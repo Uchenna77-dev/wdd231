@@ -3,18 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta property="og:title" content="DreamHome Listing Home Page">
+        <meta property="og:title" content="DreamListing Contact Page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://uchenna77-dev.github.io/wdd231/project/images/favicon.png">
-        <meta property="og:url" content="https://uchenna77-dev.github.io/wdd231/project/index.html">
-        <title>DreamHome Listings Home Page</title>
-        <meta name="description" content="This site is a Home page. This page contain some attention grabbing information along with insigths to featured properties.">
+        <meta property="og:url" content="https://uchenna77-dev.github.io/wdd231/project/contact.html">
+        <title>DreamHome Listing Contact Page</title>
+        <meta name="description" content="This site is a DreamListing Contact Page. This page will contain users informations">
         <meta name="author" content="Uchenna Onuorah">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/png">
-        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/contact.css">
         <script type="module" src="scripts/main.js"></script>
     </head>
     <body>
@@ -31,30 +31,46 @@
                 </ul>
             </nav>
         </header>
-        <section><h1>Home Page</h1></section>
-        <!-- Hero Section -->
-        <section id="hero">
-            <h2>Find Your Dream Home</h2>
+    
+        <!-- Contact Form -->
+        <section id="contact">
+            <h1>Contact Page</h1>
+            <h2>Enter Your Details</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
             
-            <button onclick="location.href='catalog.html'">Explore Listings</button>
-        </section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                Subscribe to Newsletter
+            </label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
     
-        <!-- Featured Properties -->
-        <section id="featured-properties">
-            <h2>Featured Properties</h2>
-            <div class="properties" id="home-properties">
-                <!-- Dynamic content via JavaScript -->
-            </div>
-        </section>
-    
-        <!-- Footer -->
         <footer>
             <p>&copy; 2025 DreamHome Listings. All rights reserved.</p>
             <div class="footlinks">
                 <a href="https://www.youtube.com/"><img src="images/youtube-logo.png" alt="Youtube Logo"></a>
                 <a href="https://x.com/"><img src="images/twitter-logo1.png" alt="Twitter Logo"></a>
                 <a href="https://www.linkedin.com/"><img src="images/linkedin-logo1.png" alt="Linkedin Logo"></a>
-            </div>    
+            </div>   
         </footer>
     </body>
-</html>
+    </html> 

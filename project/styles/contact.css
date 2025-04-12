@@ -56,117 +56,53 @@ nav a.active {
     font-weight: bold;
     border-bottom: 2px solid rgb(4, 244, 4);
   }
-/* Featured Properties */
-#featured-properties,
-#catalog {
-    text-align: center;
-    padding: 40px 20px;
-}
-#catalog h1 {
-    text-align: start;
-    font-size: 2rem;
-    margin-top: -20px;
-}
-.properties {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding-top: 20px;
-}
-
-.property-card {
+/* User Details Form */
+#contact-form {
+    max-width: 500px;
+    margin: auto;
     background: white;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
 }
-.property-card:hover {
-    transform: scale(1.05);
-    background-color: lightgray;
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
-.property-card img {
+
+#contact-form input {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    padding: 8px;
+    margin-top: 5px;
+    padding-right: 3px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.property-card h3 {
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 0;
-}
-
-.property-card p {
-    font-size: 14px;
-}
-
-.property-card button {
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
     background-color: darkgreen;
     color: white;
     border: none;
-    padding: 10px 15px;
+    font-size: 16px;
     cursor: pointer;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
     border-radius: 5px;
 }
 
-.property-card button:hover {
+#contact-form button:hover {
     background-color: #c0392b;
 }
-
-/* Search Bar */
-#search-bar {
-    width: 80%;
-    max-width: 800px;
-    padding: 10px;
-    margin: 20px auto;
-    display: block;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+#contact h2 {
+    text-align: center;
 }
 h1, h2, h3 {
     color: darkgreen;
 }
-/* Modal styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
 
-.modal-content {
-    background-color: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 12px;
-    width: 80%;
-    max-width: 500px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    position: relative;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-}
 /* Footer */
 footer {
     text-align: center;
@@ -174,7 +110,6 @@ footer {
     background-color: #2C3E50;
     color: white;
 }
-
 footer a img {
     width: 50px;
     height: 50px;
@@ -208,7 +143,7 @@ footer a img {
     #hero h1 {
         font-size: 28px;
     }
-    #catalog h1 {
+    #contact h1 {
         text-align: center;
         font-size: 2rem;
     }

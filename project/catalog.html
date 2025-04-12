@@ -3,24 +3,27 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta property="og:title" content="Chamber of Commerce Directory Page">
+        <meta property="og:title" content="DreamListing Catalog Page">
         <meta property="og:type" content="website">
-        <meta property="og:image" content="https://uchenna77-dev.github.io/wdd231/chamber/images/favicon.png">
-        <meta property="og:url" content="https://uchenna77-dev.github.io/wdd231/chamber/directory.html">
-        <title>Chamber Of Commerce Home Page</title>
-        <meta name="description" content="This site is a Chamber of Commerce Home page. This page contain some attention grabbing information along with community information, weather, calls to action, and business spotlights.">
+        <meta property="og:image" content="https://uchenna77-dev.github.io/wdd231/project/images/favicon.png">
+        <meta property="og:url" content="https://uchenna77-dev.github.io/wdd231/project/catalog.html">
+        <title>DreamHome Catalog Page</title>
+        <meta name="description" content="This site is a DreamHome Catalog page. This page contain a search engine and all featured properties.">
         <meta name="author" content="Uchenna Onuorah">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Georgian:wght@100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
         <link rel="icon" href="images/favicon.png" type="image/png">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/index.css">
-        <script src="scripts/index.js" defer></script>
+        <link rel="stylesheet" href="styles/catalog.css">
+        <script type="module" src="scripts/main.js"></script>
+
     </head>
     <body>
         <header>
-            <div class="logo">DreamHome Listings</div>
+            <div class="logo">
+                <img src="images/dreamhome-logo.jpeg" alt="">
+                <h3>DreamHome Listings</h3>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -32,8 +35,11 @@
     
         <!-- Property Listings -->
         <section id="catalog">
+            <h1>Catalog Page</h1>
             <h2>Available Properties</h2>
-            <input type="text" id="search-bar" placeholder="Search properties...">
+            <!-- Radio buttons will be generated inside this container -->
+            <div id="search-parameters"></div>
+            <input type="text" id="search-bar" placeholder="Search properties by....">
             <div class="properties" id="catalog-properties">
                 <!-- Dynamic content via JavaScript -->
             </div>
@@ -41,8 +47,11 @@
     
         <footer>
             <p>&copy; 2025 DreamHome Listings. All rights reserved.</p>
+            <div class="footlinks">
+                <a href="https://www.youtube.com/"><img src="images/youtube-logo.png" alt="Youtube Logo"></a>
+                <a href="https://x.com/"><img src="images/twitter-logo1.png" alt="Twitter Logo"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin-logo1.png" alt="Linkedin Logo"></a>
+            </div>   
         </footer>
-    
-        <script src="script.js"></script>
     </body>
 </html>     
